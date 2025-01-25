@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/background_result_costum"
+        android:id="@+id/bg_result_costum"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:src="@drawable/img_barbecue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:drawableEnd="@drawable/ic_barbecue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="BoraChurras"
+        android:textColor="@color/primary_400"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_qtdMeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Quantidade de carne (Kg):"
+        android:drawableStart="@drawable/ic_meat"
+        android:textColor="@color/primary_900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_qtdMeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="@color/primary_900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_title_qtdMeat"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_qtdMeat"
+        tools:text="6.500" />
+
+    <TextView
+        android:id="@+id/tv_title_qtdBear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Quantidade de cervejas (Latas):"
+        android:drawableStart="@drawable/ic_beer"
+        android:textColor="@color/primary_900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_qtdMeat" />
+
+    <TextView
+        android:id="@+id/tv_qtdBear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="@color/primary_900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_title_qtdBear"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_qtdBear"
+        tools:text="24" />
+
+    <TextView
+        android:id="@+id/tv_title_qtdRefri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Quantidade de refrigerente (Litros):"
+        android:drawableStart="@drawable/ic_refri"
+        android:textColor="@color/primary_900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_qtdBear" />
+
+    <TextView
+        android:id="@+id/tv_qtdRefri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="@color/primary_900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_title_qtdRefri"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_qtdRefri"
+        tools:text="6" />
+
+    <Button
+        android:id="@+id/btn_recalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/primary_400"
+        android:padding="8dp"
+        android:text="Novo cálculo"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_qtdRefri" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
