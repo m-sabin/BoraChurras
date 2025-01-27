@@ -79,8 +79,11 @@ Tradução para outros idiomas.
 
 Contribuições são muito bem-vindas! Caso tenha sugestões, problemas ou ideias de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
+---
+
 Desenvolvedor:
 Sabin Missagne
-LinkedIn | GitHub
+[LinkedIn](https://linkedin.com/in/sabin-missagne/) | [GitHub](https://github.com/m-sabin)  
 
+---
 Obrigado por conferir este repositório! Bora fazer aquele churrasco perfeito? 🍖🔥
